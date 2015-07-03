@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:andorid="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="false" android:state_selected="false">
+        <shape android:shape="oval">
+            <!--<solid android:color="@color/ColoPrimary"/>-->
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:color="#FFFFFF" android:width="2dip"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <!--<solid android:color="@color/ColoPrimary"/>-->
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:color="@color/md_grey_500" android:width="2dip"/>
+        </shape>
+    </item>
+</selector>

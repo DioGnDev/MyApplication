@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.dioilham.restaurant.ui.Food_Detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/foodimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconku"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/foodname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/fooddetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keterangan"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_margin="5dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/foodprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="harga"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_margin="5dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

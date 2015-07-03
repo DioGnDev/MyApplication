@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.dioilham.restaurant.ui.Keranjang">
+    <item
+        android:id="@+id/action_checkout"
+        android:icon="@mipmap/ic_send_white"
+        android:orderInCategory="100"
+        android:title="Keranjang"
+        app:showAsAction="always" />
+</menu>

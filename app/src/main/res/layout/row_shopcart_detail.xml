@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lay2_cartdetil"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/nama_menu_cart_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/harga_cart_detail"
+            android:paddingBottom="4dip"
+            android:paddingLeft="2dp"
+            android:text="Nama Menu"
+            android:textColor="#43bd00"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Price label -->
+
+        <TextView
+            android:id="@+id/harga_cart_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nama_menu_cart_detail"
+            android:layout_alignBottom="@+id/nama_menu_cart_detail"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="2dip"
+            android:text="Harga Menu"
+            android:textColor="#ff3300" />
+
+        <!-- Description label -->
+
+        <TextView
+            android:id="@+id/deskripsi_menu_cart_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nama_menu_cart_detail"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:text="Deskripsi"
+            android:textColor="#5d5d5d"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qty_cart_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/harga_cart_detail"
+            android:layout_below="@+id/deskripsi_menu_cart_detail"
+            android:layout_gravity="right"
+            android:layout_marginBottom="7dp"
+            android:gravity="right"
+            android:padding="3dp"
+            android:text="Quantity"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t_subtotal_cart_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qty_cart_detail"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/subtotal_cart_detail"
+            android:text="Subtotal: "
+            android:textColor="#0066cc"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/subtotal_cart_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/qty_cart_detail"
+            android:layout_below="@+id/qty_cart_detail"
+            android:layout_marginBottom="3dp"
+            android:gravity="right"
+            android:text="Subtotal"
+            android:textColor="#0066cc"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cartdetail_lay2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_del"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/setqty_cart_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Jumlah Item"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/b_qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Set" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_del"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn1_bg"
+        android:text="Hapus"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

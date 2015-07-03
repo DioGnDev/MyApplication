@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.android.dioilham.restaurant.ui.Drink_Detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/drinkimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconku"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/drinkname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/drinkdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keterangan"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_margin="5dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/drinkprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="harga"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_margin="5dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

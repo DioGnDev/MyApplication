@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/value_grantotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sesi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sesi"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listCart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rincian"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:listSelector="@drawable/list_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rincian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_layout">
+
+        <TextView
+            android:id="@+id/t_subtot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Subtotal :"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/subtot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/t_subtot"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="Subtotal"
+            android:textColor="#00adef"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/t_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_subtot"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Total :"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/subtot"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/subtot"
+            android:layout_toRightOf="@+id/t_total"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="Total Belanja"
+            android:textColor="#00adef"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
